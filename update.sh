@@ -7,9 +7,9 @@ chmod -R +x chainflip-v0.2.1/*
 cp -r chainflip-v0.1.1/config chainflip-v0.2.1/
 systemctl stop chainflip-engine.service
 systemctl stop chainflip-node.service
-sed -i 's/v0.1.1/v0.2.1/g'  /etc/systemd/system/chainflip-engine.service 
-sed -i 's/v0.1.1/v0.2.1/g'  /etc/systemd/system/chainflip-node.service
-sed -i 's/v0.1.1/v0.2.1/g' /etc/logrotate.d/chainflip
+sed -i 's/v0.2.0/v0.2.1/g'  /etc/systemd/system/chainflip-engine.service 
+sed -i 's/v0.2.0/v0.2.1/g'  /etc/systemd/system/chainflip-node.service
+sed -i 's/v0.2.0/v0.2.1/g' /etc/logrotate.d/chainflip
 systemctl daemon-reload
 systemctl start chainflip-engine
 systemctl start chainflip-node
